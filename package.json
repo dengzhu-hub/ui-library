@@ -1,5 +1,5 @@
 {
-  "name": "jackdeng/ui-library",
+  "name": "dengzhu-hub/ui-library",
   "version": "0.0.1",
   "description": "",
   "main": "dist/cjs/index.js",
@@ -8,8 +8,12 @@
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/dengzhu-hub"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "rollup -c --watch",
+    "build": "rollup -c"
   },
   "author": "jackdeng",
   "license": "MIT",
@@ -19,6 +23,8 @@
     "@rollup/plugin-typescript": "^11.1.5",
     "@types/react": "^18.2.27",
     "rollup-plugin-dts": "^6.1.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "tslib": "^2.6.2",
     "typescript": "^5.2.2"
   }
 }
